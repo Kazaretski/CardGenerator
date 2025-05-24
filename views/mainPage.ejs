@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Card Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <main>
+        <h1>Card Generator</h1>
+        <p>This is just an example website that generates cards with a random number&comma; letter and color&period;<br>The cards are different with each time the website gets booted up&period;</p>
+        <section><% for (let i = 0; i < cards.length; i++) { %>
+            <div class="<%= cards[i].color %> card">
+                <p><%= cards[i].number %></p>
+                <p><%= cards[i].letter %></p>
+            </div><% } %>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Developed by Kazaretski &lpar;at 1AM in like half an hour&rpar;</p>
+    </footer>
+</body>
+</html>

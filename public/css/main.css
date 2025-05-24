@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Outfit;
+    src: url("../font/Outfit.ttf");
+}
+:root {
+    --colRed: #ea3f3f;
+    --colOrange: #e7722a;
+    --colYellow: #e7d921;
+    --colGreen: #2fda3a;
+    --colBlue: #1a9fe6;
+    --colPurple: #8832df;
+    --colPink: #f466bb;
+    --colWhite: #dfdfdf;
+    --themeDark: #121317;
+    --themeLight: #1e1f23;
+}
+::selection {
+    background-color: #000;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    background-color: var(--themeDark);
+    color: var(--colWhite);
+    font-family: Outfit, sans-serif;
+    padding: 6rem;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+h1, p {
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    padding: 2rem;
+    position: fixed;
+}
+/* -------------------------------------- */
+.card {
+    background-color: var(--themeLight);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    height: 120px;
+    margin: 0.4rem;
+    padding: 1rem;
+    transition: filter 0.3s;
+    user-select: none;
+    width: 80px;
+}
+.card:hover {
+    filter: brightness(1.8);
+}
+.card p {
+    width: 100%;
+}
+.card p:first-of-type {
+    font-size: 26px;
+}
+.card p:last-of-type {
+    font-size: 18px;
+}
+.red {
+    border-color: var(--colRed);
+    color: var(--colRed);
+}
+.orange {
+    border-color: var(--colOrange);
+    color: var(--colOrange);
+}
+.yellow {
+    border-color: var(--colYellow);
+    color: var(--colYellow);
+}
+.green {
+    border-color: var(--colGreen);
+    color: var(--colGreen);
+}
+.blue {
+    border-color: var(--colBlue);
+    color: var(--colBlue);
+}
+.purple {
+    border-color: var(--colPurple);
+    color: var(--colPurple);
+}
+.pink {
+    border-color: var(--colPink);
+    color: var(--colPink);
+}
+.white {
+    border-color: var(--colWhite);
+    color: var(--colWhite);
+}
