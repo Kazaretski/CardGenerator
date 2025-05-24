@@ -25,7 +25,7 @@ for (let i = 0; i < cardAmount; i++) {
         number: startingNumber += Math.round(Math.random() * 3) + 1,
         color: allColors[Math.round(Math.random() * allColors.length) - 1]
     });
-} console.log(deck);
+}
 // -------------------------------------------------------
 app.get("/", (req, res) => {
     res.render("mainPage", {cards: deck});
