@@ -11,6 +11,6 @@
     "@types/express": "^5.0.2"
   },
   "scripts": {
-    "start": "nodemon index.ts"
+    "start": "nodemon app/index.ts"
   }
 }
